@@ -1,5 +1,8 @@
 # Python Playground
 
+Exercises and examples written during the Introduction to Python BBC Academy course.
+## Credits
+* Instructor: [Reindert-Jan Ekker](https://codesensei.nl)
 ## Getting Started
 
 Create a virtual environment with `virtualenv`
