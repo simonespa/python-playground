@@ -2,7 +2,7 @@
 def greet(name):
   print(f'Hi {name}')
 
-# Named parameters
+# Default values with Python docstrings
 def add(a = 0, b = 0):
   '''This function adds two numbers'''
   return a + b
