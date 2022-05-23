@@ -36,6 +36,28 @@ If you want to switch projects or otherwise leave your virtual environment
 deactivate
 ```
 
+## Run the code
+
+Let's say there is an `example.py` module within the `exercises` folder that defines a `hello` function.
+
+Open the Python interpreter
+
+```
+python
+```
+
+import the function you want to run from its module
+
+```py
+from exercises.example import hello
+```
+
+execute the function
+
+```py
+hello()
+```
+
 ## Requirements file
 
 ```
