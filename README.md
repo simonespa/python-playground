@@ -1,8 +1,10 @@
 # Python Playground
 
-Exercises and examples written during the Introduction to Python BBC Academy course.
-## Credits
-* Instructor: [Reindert-Jan Ekker](https://codesensei.nl)
+Playground repository for Python and its ecosystem.
+
+I wrote the code within the "bbc_training" folder during the "Introduction to Python" BBC Academy course run by [Reindert-Jan Ekker](https://codesensei.nl). The course material was provided by the instructor.
+
+The code in the "exercises" folder are coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
 ## Getting Started
 
 Create a virtual environment with `virtualenv`
