@@ -8,13 +8,13 @@ Exercises and examples written during the Introduction to Python BBC Academy cou
 Create a virtual environment with `virtualenv`
 
 ```
-virtualenv env
+virtualenv .env
 ```
 
 Activate the virtual environment
 
 ```
-source env/bin/activate
+source .env/bin/activate
 ```
 or
 
