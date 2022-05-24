@@ -4,6 +4,11 @@ exclude_patterns = [
   "bbc_training/**"
 ]
 
+test_patterns = [
+  "test_*.py",
+  "*_test.py"
+]
+
 [[analyzers]]
 name = "python"
 enabled = true
