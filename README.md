@@ -71,6 +71,12 @@ and then run
 python exercises/example.py
 ```
 
+## Test and code formatting
+
+To test every `*_test.py` module within the `exercises` folder run `pytest` command.
+
+To format every file in the `exercises` folder run `black exercises` command.
+
 ## Requirements file
 
 If you want to generate a new "requirements" file or add/remove dependencies and update the existing one
