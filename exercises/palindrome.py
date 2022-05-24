@@ -4,7 +4,6 @@ def palindrome(input_string):
     """
     Return True if a given string is a palindrome, False otherwise
     """
-
     if len(input_string) <= 1:
         return True
 
