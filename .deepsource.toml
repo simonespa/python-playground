@@ -5,8 +5,7 @@ exclude_patterns = [
 ]
 
 test_patterns = [
-  "test_*.py",
-  "*_test.py"
+  "exercises/**/*_test.py"
 ]
 
 [[analyzers]]
