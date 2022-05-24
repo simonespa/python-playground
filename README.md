@@ -30,10 +30,10 @@ You can confirm you’re in the virtual environment by checking the location of 
 which python
 ```
 
-If you want to switch projects or otherwise leave your virtual environment
+Install the required dependencies
 
 ```
-deactivate
+pip install -r requirements.txt
 ```
 
 ## Run the code
@@ -73,16 +73,30 @@ python exercises/example.py
 
 ## Requirements file
 
+If you want to generate a new "requirements" file or add/remove dependencies and update the existing one
+
 ```
 pip freeze > requirements.txt
 ```
 
-## Useful commands
+## PIP useful commands
+
+To list all the installed libraries in `site-packages`
 
 ```
 pip list
 ```
 
+To "show" the details of a specific library
+
 ```
 pip show requests
+```
+
+## Deactivate the current virtual environment
+
+If you want to switch to another project or generally speaing leave your current virtual environment
+
+```
+deactivate
 ```
