@@ -58,6 +58,19 @@ execute the function
 hello()
 ```
 
+Modules don't have any "main" execution. If you were to run a file directly, you would need to add the following to it
+
+```py
+if __name__ == '__main__':
+  hello()
+```
+
+and then run
+
+```
+python exercises/example.py
+```
+
 ## Requirements file
 
 ```
