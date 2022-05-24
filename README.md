@@ -2,9 +2,9 @@
 
 Playground repository for Python and its ecosystem.
 
-I wrote the code within the "bbc_training" folder during the "Introduction to Python" BBC Academy course run by [Reindert-Jan Ekker](https://codesensei.nl). The course material was provided by the instructor.
+The code in `bbc_training` folder is from the "Introduction to Python" BBC Academy course I attended, run by [Reindert-Jan Ekker](https://codesensei.nl). There are lab exercises about Python fundamentals, packaging, testing, file and error handling, plus some intro exercises to Pandas and Jupiter notebooks.
 
-The code in the "exercises" folder are coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
+The `exercises` folder contains coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
 ## Getting Started
 
 Create a virtual environment with `virtualenv`
