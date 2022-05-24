@@ -1,4 +1,6 @@
-def fibonacci(n, memo={}):
+def fibonacci(n, memo=None):
+    if memo is None:
+        memo = {}
     if n in memo:
         return memo[n]
     if n <= 0:
