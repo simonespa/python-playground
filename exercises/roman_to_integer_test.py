@@ -49,4 +49,5 @@ from roman_to_integer import roman_to_integer
     ],
 )
 def test_roman_to_integer(roman_number, expected_integer_number):
+    """Test the transformation between roman and integer numbers"""
     assert roman_to_integer(roman_number) == expected_integer_number
