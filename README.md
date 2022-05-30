@@ -7,13 +7,15 @@ The code in `bbc_training` folder is from the "Introduction to Python" BBC Acade
 The `exercises` folder contains coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
 ## Getting Started
 
+### Create a virtual environment
+
 Create a virtual environment with `virtualenv`
 
 ```
 virtualenv .env
 ```
 
-Activate the virtual environment
+### Activate the virtual environment
 
 ```
 source .env/bin/activate
@@ -24,11 +26,15 @@ or
 . env/bin/activate
 ```
 
+### Verify the virtual environment
+
 You can confirm you’re in the virtual environment by checking the location of your Python interpreter
 
 ```
 which python
 ```
+
+### Dependencies
 
 Install the required dependencies
 
