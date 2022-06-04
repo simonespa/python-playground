@@ -2,9 +2,25 @@
 
 Playground repository for Python and its ecosystem.
 
-The code in `bbc_training` folder is from the "Introduction to Python" BBC Academy course I attended, run by [Reindert-Jan Ekker](https://codesensei.nl). There are lab exercises about Python fundamentals, packaging, testing, file and error handling, plus some intro exercises to Pandas and Jupiter notebooks.
+## bbc_training
 
-The `exercises` folder contains coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
+This folder is from the "Introduction to Python" BBC Academy course I attended, run by [Reindert-Jan Ekker](https://codesensei.nl). It contains lab exercises about Python fundamentals, packaging, testing, file and error handling, plus some intro exercises to Pandas and Jupiter notebooks.
+
+## exercises
+
+This folder contains coding puzzles for general practice to keep myself current with Python programming and general algorithm resolution and data structure.
+
+## stats
+
+I use this folder to practice data science with the most well-known libraries:
+* NumPy
+* SciPy
+* scikit-learn
+* pandas
+* TensorFlow
+* PyTorch
+* Matplotlib
+
 ## Getting Started
 
 ### Create a virtual environment
