@@ -3,7 +3,7 @@ import matplotlib.pyplot as pyplot
 from matplotlib import cm as colourmap
 # Required for 3D Projections
 from mpl_toolkits.mplot3d import Axes3D
-# Provide access to numpy functions
+# Provide access to stats functions
 import numpy as np
 
 # Make the data to be displayed
