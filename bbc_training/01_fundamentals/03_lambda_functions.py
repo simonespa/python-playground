@@ -1,16 +1,15 @@
 # Lambdas
 
-persons = [
-  ('Z', 24),
-  ('A', 31),
-  ('D', 21)
-]
+persons = [("Z", 24), ("A", 31), ("D", 21)]
+
 
 def get_name(person):
-  return person[0]
+    return person[0]
+
 
 def get_age(person):
-  return person[1]
+    return person[1]
+
 
 persons.sort(key=get_name)
 print(persons)

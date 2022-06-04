@@ -2,6 +2,7 @@
 # errors and exceptions as well as
 # creating / raising your own
 
+
 def run_calculation(x):
     x / 0
 
@@ -12,41 +13,41 @@ def print_value(i, list):
 
 def print_alt_value(i, list):
     if i > len(list):
-        raise ValueError('Invalid length ' + str(i))
+        raise ValueError("Invalid length " + str(i))
     print(list[i])
 
 
 def my_function(x, y):
-    print('my_function in')
+    print("my_function in")
     result = x / y
-    print('my_function out')
+    print("my_function out")
     return result
 
 
 def f2():
-    print('f2 in')
+    print("f2 in")
     function_bang()
-    print('f2 out')
+    print("f2 out")
 
 
 def function_bang():
-    print('function_bang in')
-    raise ValueError('Bang!')
-    print('function_bang out')
+    print("function_bang in")
+    raise ValueError("Bang!")
+    print("function_bang out")
 
 
 class InvalidAgeException(Exception):
-    """ Valid Ages must be between 0 and 120 """
+    """Valid Ages must be between 0 and 120"""
 
     def __init__(self, value):
         self.value = value
 
     def __str__(self):
-        return 'InvalidAgeException(' + str(self.value) + ')'
+        return "InvalidAgeException(" + str(self.value) + ")"
 
 
 class DivideByYWhenZeroException(Exception):
-    """ Sample Exception class"""
+    """Sample Exception class"""
 
 
 def divide(x, y):
@@ -63,13 +64,13 @@ class Person:
 
     @property
     def age(self):
-        """ The docstring for the age property """
-        print('In age method')
+        """The docstring for the age property"""
+        print("In age method")
         return self._age
 
     @age.setter
     def age(self, value):
-        print('In set_age method(', value, ')')
+        print("In set_age method(", value, ")")
         if isinstance(value, int) & (value > 0 & value < 120):
             self._age = value
         else:
@@ -77,7 +78,7 @@ class Person:
 
     @property
     def name(self):
-        print('In name')
+        print("In name")
         return self._name
 
     @name.deleter
@@ -85,37 +86,37 @@ class Person:
         del self._name
 
     def __str__(self):
-        return 'Person[' + str(self._name) + '] is ' + self._age
+        return "Person[" + str(self._name) + "] is " + self._age
 
 
 divide(6, 0)
 
 try:
-    p = Person('John', 21)
+    p = Person("John", 21)
     p.age = -1
 except InvalidAgeException as e:
     print(e)
 
-print('Starting')
+print("Starting")
 try:
-    print('Before my_function')
+    print("Before my_function")
     my_function(6, 2)
-    print('After my_function')
+    print("After my_function")
 except ZeroDivisionError as exp:
-    print('oops')
+    print("oops")
 else:
-    print('All OK')
+    print("All OK")
 
-print('Done')
+print("Done")
 
 try:
     my_function(6, 0)
 except ZeroDivisionError as e:
     print(e)
 else:
-    print('Everything worked OK')
+    print("Everything worked OK")
 finally:
-    print('Always runs')
+    print("Always runs")
 
 try:
     function_bang()
@@ -134,10 +135,10 @@ try:
     print_value(2, values)
     print_value(3, values)
 except IndexError as e:
-    print('Exception: ', e)
+    print("Exception: ", e)
 else:
-    print('All OK')
+    print("All OK")
 finally:
-    print('Always runs')
+    print("Always runs")
 
 print(divide(3, 0))

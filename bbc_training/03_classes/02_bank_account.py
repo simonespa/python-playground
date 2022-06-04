@@ -1,5 +1,6 @@
 # Bank Account: https://codesensei.nl/courses/shared/exercises/classes_2.html
 
+
 class BankAccount:
     def __init__(self, name, initial_balance):
         self.name = name
@@ -23,10 +24,11 @@ class BankAccount:
             print("Can't withdraw nonpositive amount!")
 
     def __str__(self) -> str:
-      return 'dfd'
+        return "dfd"
 
     def __repr__(self) -> str:
-      return 'dfd'
+        return "dfd"
 
-a = BankAccount('Simone', 10000)
+
+a = BankAccount("Simone", 10000)
 print(a)

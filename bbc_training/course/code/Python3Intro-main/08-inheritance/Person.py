@@ -7,12 +7,12 @@ class Person:
         self.age = age
 
     def birthday(self):
-        print('Happy birthday you were', self.age)
+        print("Happy birthday you were", self.age)
         self.age += 1
-        print('You are now', self.age)
+        print("You are now", self.age)
 
     def __str__(self):
-        return self.name + ' is ' + str(self.age)
+        return self.name + " is " + str(self.age)
 
 
 class Employee(Person):
@@ -27,7 +27,8 @@ class Employee(Person):
         return hours_worked * rate_of_pay
 
     def __str__(self):
-        return super().__str__() + ' - id(' + str(self.id) + ')'
+        return super().__str__() + " - id(" + str(self.id) + ")"
+
 
 @final
 class SalesPerson(Employee):
@@ -40,26 +41,26 @@ class SalesPerson(Employee):
         return self.sales * 0.5
 
 
-print('Person')
-p = Person('John', 54)
+print("Person")
+p = Person("John", 54)
 print(p)
 p.birthday()
 print(p.name)
 print(p.age)
-print('-' * 25)
+print("-" * 25)
 
-print('Employee')
-e = Employee('Denise', 51, 7468)
+print("Employee")
+e = Employee("Denise", 51, 7468)
 print(e)
 e.birthday()
 print(e.name)
 print(e.age)
 print(e.id)
-print('e.calculate_pay(40):', e.calculate_pay(40))
-print('-' * 25)
+print("e.calculate_pay(40):", e.calculate_pay(40))
+print("-" * 25)
 
-print('SalesPerson')
-s = SalesPerson('Phoebe', 21, 4712, 'UK', 30000.0)
+print("SalesPerson")
+s = SalesPerson("Phoebe", 21, 4712, "UK", 30000.0)
 s.birthday()
-print('s.calculate_pay(40):', s.calculate_pay(40))
-print('s.bonus():', s.bonus())
+print("s.calculate_pay(40):", s.calculate_pay(40))
+print("s.bonus():", s.bonus())

@@ -39,27 +39,23 @@ print(type(set2))
 groceries = []
 
 for x in range(100):
-  item = input('Enter item: ')
-  if not item:
-    break
-  groceries.append(item)
+    item = input("Enter item: ")
+    if not item:
+        break
+    groceries.append(item)
 
 for item in groceries:
-  print(item)
+    print(item)
 
 list = list()
 tuple = tuple()
 set = set([1, 2, 2])
-dictionary = dict(name='Simone')
+dictionary = dict(name="Simone")
 print(dictionary)
 
 # Example 2
 
-inventory = {
-  'bread': 5,
-  'milk': 10,
-  'egg': 1
-}
+inventory = {"bread": 5, "milk": 10, "egg": 1}
 
 for product, price in inventory.items():
-  print(f'The {product} cost {price}£')
+    print(f"The {product} cost {price}£")

@@ -1,9 +1,9 @@
 # Alternative to reading lines from a file
 # A file object is iterable
 
-file = open('myfile.txt', 'r')
+file = open("myfile.txt", "r")
 
 for line in file:
-    print(line, end='')
+    print(line, end="")
 
 file.close()

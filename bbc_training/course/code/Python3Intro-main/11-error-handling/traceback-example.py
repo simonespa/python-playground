@@ -5,6 +5,6 @@ import traceback
 try:
     print(6 / 0)
 except Exception as exp:
-    print('oops')
+    print("oops")
     print(exp)
     traceback.print_exc()

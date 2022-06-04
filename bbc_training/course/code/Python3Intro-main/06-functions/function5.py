@@ -11,13 +11,13 @@ def get_integer_input(message):
 
     value_as_string = input(message)
     while not value_as_string.isnumeric():
-        print('The input must be an integer')
+        print("The input must be an integer")
         value_as_string = input(message)
 
     return int(value_as_string)
 
 
-age = get_integer_input('Please input your age: ')
-print('age is', age)
+age = get_integer_input("Please input your age: ")
+print("age is", age)
 
 print(get_integer_input.__doc__)

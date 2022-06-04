@@ -1,22 +1,22 @@
-def greeter(name, message='Live Long and Prosper'):
-    print('Welcome', name, '-', message)
+def greeter(name, message="Live Long and Prosper"):
+    print("Welcome", name, "-", message)
 
 
-greeter('Eloise')
-greeter('Eloise', 'Hope you like Rugby')
+greeter("Eloise")
+greeter("Eloise", "Hope you like Rugby")
 
 
-def greeter(name, title='Dr', prompt='Welcome', message='Live Long and Prosper'):
-    print(prompt, title, name, '-', message)
+def greeter(name, title="Dr", prompt="Welcome", message="Live Long and Prosper"):
+    print(prompt, title, name, "-", message)
 
 
-greeter(message='We like Python', name='Lloyd')
-greeter('Lloyd', message='We like Python')
+greeter(message="We like Python", name="Lloyd")
+greeter("Lloyd", message="We like Python")
 
 
 def greeter(*names):
     for name in names:
-        print('Welcome', name)
+        print("Welcome", name)
 
 
-greeter('John', 'Denise', 'Phoebe', 'Adam', 'Gryff', 'Jasmine')
+greeter("John", "Denise", "Phoebe", "Adam", "Gryff", "Jasmine")

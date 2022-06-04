@@ -1,19 +1,19 @@
 class Car:
-    """ Car """
+    """Car"""
 
     def move(self):
-        print('Car - move()')
+        print("Car - move()")
 
 
 class Toy:
-    """ Toy """
+    """Toy"""
 
     def move(self):
-        print('Toy - move()')
+        print("Toy - move()")
 
 
 class ToyCar(Car, Toy):
-    """ A Toy Car """
+    """A Toy Car"""
 
 
 tc = ToyCar()

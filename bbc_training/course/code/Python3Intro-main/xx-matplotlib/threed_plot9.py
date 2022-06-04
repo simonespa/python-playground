@@ -1,8 +1,11 @@
 import matplotlib.pyplot as pyplot
+
 # Import matplotlib colour map
 from matplotlib import cm as colourmap
+
 # Required for 3D Projections
 from mpl_toolkits.mplot3d import Axes3D
+
 # Provide access to stats functions
 import numpy as np
 
@@ -20,22 +23,19 @@ z_values = np.sin(x_values + y_values)
 figure = pyplot.figure()
 
 # Get the axes object for the 3D graph
-axes = figure.gca(projection='3d')
+axes = figure.gca(projection="3d")
 
 # Plot the surface.
-surf = axes.plot_surface(x_values,
-                         y_values,
-                         z_values,
-                         cmap=colourmap.coolwarm)
+surf = axes.plot_surface(x_values, y_values, z_values, cmap=colourmap.coolwarm)
 
 # Add a color bar which maps values to colors.
 figure.colorbar(surf)
 
 # Add labels to the graph
 pyplot.title("3D Graph")
-axes.set_ylabel('y values', fontsize=7)
-axes.set_xlabel('x values', fontsize=7)
-axes.set_zlabel('z values', fontsize=7)
+axes.set_ylabel("y values", fontsize=7)
+axes.set_xlabel("x values", fontsize=7)
+axes.set_zlabel("z values", fontsize=7)
 
 # Display the graph
 pyplot.show()
