@@ -1,7 +1,7 @@
-file = open('myfile.txt', 'r')
+file = open("myfile.txt", "r")
 
 lines = file.readlines()
 for line in lines:
-    print(line, end='')
+    print(line, end="")
 
 file.close()

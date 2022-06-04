@@ -1,4 +1,4 @@
 from utils import Shape, printer as myfunc
 
-s = Shape('oval')
+s = Shape("oval")
 myfunc(s)

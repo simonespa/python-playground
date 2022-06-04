@@ -1,6 +1,7 @@
 # Example of generating a set of even numbers
 # The generator itself has a loop
 
+
 def evens_up_to(limit):
     value = 0
     while value <= limit:
@@ -9,22 +10,22 @@ def evens_up_to(limit):
 
 
 for i in evens_up_to(6):
-    print(i, end=', ')
+    print(i, end=", ")
 
-print('\n', '-' * 20)
+print("\n", "-" * 20)
 
 for i in evens_up_to(4):
-    print('i:', i)
-    print('\t', end='')
+    print("i:", i)
+    print("\t", end="")
 
     for j in evens_up_to(6):
-        print('j:', j, end=', ')
+        print("j:", j, end=", ")
 
-    print('')
+    print("")
 
 # Dpn;t have to use in a loop can explicitly
 # request the next value
 evens = evens_up_to(4)
-print(next(evens), end=', ')
-print(next(evens), end=', ')
+print(next(evens), end=", ")
+print(next(evens), end=", ")
 print(next(evens))

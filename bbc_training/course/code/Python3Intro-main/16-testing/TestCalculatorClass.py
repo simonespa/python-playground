@@ -1,33 +1,36 @@
 import pytest
 from calculator import Calculator
 
+
 @pytest.fixture
 def calculator():
-    """ Returns a Calculator instance """
-    print('calculator fixture')
+    """Returns a Calculator instance"""
+    print("calculator fixture")
     return Calculator()
 
+
 def setup_module():
-    print('module set up')
+    print("module set up")
+
 
 def teardown_module():
-    print('module teardown')
+    print("module teardown")
+
 
 class TestCalculatorClass:
-
     @classmethod
     def setup_class(cls):
-        print('startup once per class')
+        print("startup once per class")
 
     @classmethod
     def teardown_class(cls):
-        print('teardown once per class')
+        print("teardown once per class")
 
     def setup_method(self):
-        print('startup per test')
+        print("startup per test")
 
     def teardown_method(self):
-        print('teardown per test')
+        print("teardown per test")
 
     # Tests follow from here
 

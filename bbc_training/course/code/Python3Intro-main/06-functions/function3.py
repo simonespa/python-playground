@@ -1,5 +1,6 @@
 # Examples of functions that return values
 
+
 def square(n):
     return n * n
 
@@ -11,7 +12,7 @@ print(result)
 print(square(5))
 # Use the result returned form square in a conditional expression
 if square(3) < 15:
-    print('Still less than 15')
+    print("Still less than 15")
 
 
 # Function returning multiple values
@@ -22,8 +23,8 @@ def swap(a, b):
 a = 2
 b = 3
 x, y = swap(a, b)
-print(x, ',', y)
-print('----')
+print(x, ",", y)
+print("----")
 
 z = swap(a, b)
 print(z)
@@ -32,7 +33,7 @@ print(z)
 # Function with arbitrary Parameter List
 def greeter(*args):
     for name in args:
-        print('Welcome', name)
+        print("Welcome", name)
 
-greeter('John', 'Denise', 'Phoebe', 'Adam', 'Gryff', 'Jasmine')
 
+greeter("John", "Denise", "Phoebe", "Adam", "Gryff", "Jasmine")

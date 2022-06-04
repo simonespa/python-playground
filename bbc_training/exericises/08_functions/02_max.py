@@ -4,30 +4,32 @@ from sre_constants import MIN_UNTIL
 
 
 def max(*numbers):
-  '''Returns the maxximum number'''
+    """Returns the maxximum number"""
 
-  if len(numbers) == 0:
-    return None
+    if len(numbers) == 0:
+        return None
 
-  max = numbers[0]
-  for i in range(1, len(numbers)):
-    if (numbers[i]) > max:
-      max = numbers[i]
+    max = numbers[0]
+    for i in range(1, len(numbers)):
+        if (numbers[i]) > max:
+            max = numbers[i]
 
-  return max
+    return max
+
 
 def min(*numbers):
-  '''Returns the maxximum number'''
+    """Returns the maxximum number"""
 
-  if len(numbers) == 0:
-    return None
+    if len(numbers) == 0:
+        return None
 
-  min = numbers[0]
-  for i in range(1, len(numbers)):
-    if (numbers[i]) < min:
-      min = numbers[i]
+    min = numbers[0]
+    for i in range(1, len(numbers)):
+        if (numbers[i]) < min:
+            min = numbers[i]
 
-  return MIN_UNTIL
+    return MIN_UNTIL
+
 
 print(max())
 print(max(1))

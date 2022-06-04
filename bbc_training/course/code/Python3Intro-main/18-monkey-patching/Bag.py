@@ -1,12 +1,12 @@
-class Bag():
+class Bag:
     def __init__(self):
-        self.data = ['a', 'b', 'c']
+        self.data = ["a", "b", "c"]
 
     def __getitem__(self, pos):
         return self.data[pos]
 
     def __str__(self):
-        return 'Bag(' + str(self.data) + ')'
+        return "Bag(" + str(self.data) + ")"
 
 
 b = Bag()
@@ -22,10 +22,10 @@ Bag.__len__ = get_length
 
 print(len(b))
 
-Bag.name = 'My Bag'
+Bag.name = "My Bag"
 print(b.name)
 
-b.name = 'Johns Bag'
+b.name = "Johns Bag"
 print(b.name)
 
 b2 = Bag()

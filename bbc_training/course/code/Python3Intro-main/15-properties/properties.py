@@ -1,26 +1,28 @@
 # Example of defining a class using properties
 
+
 class Person:
-    """ Class where age and name are properties """
+    """Class where age and name are properties"""
+
     def __init__(self, name, age):
         self._name = name
         self._age = age
 
     @property
     def age(self):
-        """ The docstring for the age property """
-        print('In age method')
+        """The docstring for the age property"""
+        print("In age method")
         return self._age
 
     @age.setter
     def age(self, value):
-        print('In set_age method')
+        print("In set_age method")
         if isinstance(value, int) & value > 0 & value < 120:
             self._age = value
 
     @property
     def name(self):
-        print('In name')
+        print("In name")
         return self._name
 
     @name.deleter
@@ -28,10 +30,10 @@ class Person:
         del self._name
 
     def __str__(self):
-        return 'Person[' + str(self._name) + '] is ' + str(self._age)
+        return "Person[" + str(self._name) + "] is " + str(self._age)
 
 
-person = Person('John', 54)
+person = Person("John", 54)
 print(person)
 print(person.age)
 print(person.name)

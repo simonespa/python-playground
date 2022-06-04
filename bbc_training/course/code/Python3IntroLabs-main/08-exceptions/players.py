@@ -3,11 +3,11 @@ import random
 from utils import get_user_input
 from constants import MIN_VALUE, MAX_VALUE, GUESS_PROMPT
 
-print('Loading Player Information')
+print("Loading Player Information")
 
 
 class Player:
-    """ Class to represent a player within the number guess game """
+    """Class to represent a player within the number guess game"""
 
     def __init__(self, name):
         self.name = name
@@ -15,7 +15,14 @@ class Player:
         self.history = []
 
     def __str__(self):
-        return 'Player ' + self.name + ' guesses ' + str(self.guess_count) + ', history ' + str(self.history)
+        return (
+            "Player "
+            + self.name
+            + " guesses "
+            + str(self.guess_count)
+            + ", history "
+            + str(self.history)
+        )
 
     def increment_count(self):
         self.guess_count = self.guess_count + 1
@@ -24,7 +31,9 @@ class Player:
         self.history.append(guess)
 
     def print_history(self):
-        formatted_history = list(map(lambda guess: '\t guess ' + str(guess), self.history))
+        formatted_history = list(
+            map(lambda guess: "\t guess " + str(guess), self.history)
+        )
         for guess in formatted_history:
             print(guess)
 
@@ -36,10 +45,10 @@ class Player:
 
 
 class ComputerPlayer(Player):
-    """ Computer automated player """
+    """Computer automated player"""
 
     def __init__(self, range):
-        super().__init__('Computer')
+        super().__init__("Computer")
         self.range = range
         self.random_number_generator = random.Random()
 
@@ -50,4 +59,4 @@ class ComputerPlayer(Player):
         return guess
 
     def __str__(self):
-        return 'Computer' + super().__str__()
+        return "Computer" + super().__str__()
