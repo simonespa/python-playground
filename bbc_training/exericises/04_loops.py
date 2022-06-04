@@ -36,10 +36,10 @@
 # Names and Ages
 
 list = [
-    ['John', 'Smith', 32],
-    ['Peter', 'Jones', 50],
-    ['Anna', 'Karenina', 44],
-    ['Guido', 'Van Rossum', 54]
+    ["John", "Smith", 32],
+    ["Peter", "Jones", 50],
+    ["Anna", "Karenina", 44],
+    ["Guido", "Van Rossum", 54],
 ]
 
 # for x in range(len(list)):
@@ -72,5 +72,3 @@ list = [
 # print(tuition)
 
 # Pyramid
-
-

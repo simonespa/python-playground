@@ -8,4 +8,4 @@ def gen_numbers():
 for i in gen_numbers():
     print(i)
 
-print('-' * 20)
+print("-" * 20)

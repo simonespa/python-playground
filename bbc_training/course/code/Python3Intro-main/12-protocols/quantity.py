@@ -15,7 +15,7 @@ class Quantity:
         return Quantity(new_value)
 
     def __pow__(self, other):
-        new_value = self.value ** other.value
+        new_value = self.value**other.value
         return Quantity(new_value)
 
     def __truediv__(self, other):
@@ -49,24 +49,24 @@ class Quantity:
         return self.value <= other.value
 
     def __str__(self):
-        return 'Quantity[' + str(self.value) + ']'
+        return "Quantity[" + str(self.value) + "]"
 
 
 def main():
     q1 = Quantity(5)
     q2 = Quantity(10)
-    print('q1 =', q1, ', q2 =', q2)
+    print("q1 =", q1, ", q2 =", q2)
 
     q3 = q1 + q2
-    print('q3 =', q3)
+    print("q3 =", q3)
 
-    print('q1 * q2 =', q1 * q2)
-    print('q1 / q2 =', q1 / q2)
+    print("q1 * q2 =", q1 * q2)
+    print("q1 / q2 =", q1 / q2)
 
-    print('q1 < q2: ', q1 < q2)
-    print('q3 > q2: ', q3 > q2)
-    print('q3 == q1: ', q3 == q1)
+    print("q1 < q2: ", q1 < q2)
+    print("q3 > q2: ", q3 > q2)
+    print("q3 == q1: ", q3 == q1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

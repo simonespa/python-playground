@@ -1,5 +1,5 @@
 def prime_number_generator(number):
-    """ Provides a sequence of prime numbers up to num"""
+    """Provides a sequence of prime numbers up to num"""
     # Assume a number is a prime number until proved otherwise
     prime_number = True
     for i in range(2, number):
@@ -13,13 +13,13 @@ def prime_number_generator(number):
         prime_number = True
 
 
-number = input('Please input the number: ')
+number = input("Please input the number: ")
 if number.isnumeric():
     num = int(number)
     if num <= 2:
-        print('Number must be greater than 2')
+        print("Number must be greater than 2")
     else:
         for prime in prime_number_generator(num):
-            print(prime, end=', ')
+            print(prime, end=", ")
 else:
-    print('Must be a positive integer')
+    print("Must be a positive integer")

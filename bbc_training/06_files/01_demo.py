@@ -1,5 +1,5 @@
-f = open('./test.txt', 'w')
+f = open("./test.txt", "w")
 
-f.write('test')
-print('Hello', file=f)
-print('Bye', file=f)
+f.write("test")
+print("Hello", file=f)
+print("Bye", file=f)

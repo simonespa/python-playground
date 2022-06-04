@@ -1,6 +1,6 @@
 class Evens(object):
-    """ Illustrates a class implementing the
-     Iterable and Iterator protocols """
+    """Illustrates a class implementing the
+    Iterable and Iterator protocols"""
 
     def __init__(self, limit):
         self.limit = limit
@@ -20,12 +20,8 @@ class Evens(object):
             return return_val
 
 
-print('Start')
+print("Start")
 for i in Evens(6):
-    print(i, end=', ')
+    print(i, end=", ")
 
-print('Done')
-
-
-
-
+print("Done")

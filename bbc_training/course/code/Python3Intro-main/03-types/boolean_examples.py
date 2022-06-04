@@ -11,6 +11,6 @@ print(int(False))
 print(bool(1))
 print(bool(0))
 
-status = bool(input('OK to proceed: '))
+status = bool(input("OK to proceed: "))
 print(status)
 print(type(status))

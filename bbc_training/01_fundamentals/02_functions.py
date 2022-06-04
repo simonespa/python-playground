@@ -1,6 +1,6 @@
 # Function
 def greet(name):
-    print(f'Hi {name}')
+    print(f"Hi {name}")
 
 
 # Default values with Python docstrings
@@ -18,12 +18,12 @@ print(add(1))
 
 # Named variables
 def message(name, message):
-    print(f'{name} has a message: {message}')
+    print(f"{name} has a message: {message}")
 
 
-message('Simone', 'hi there')
-message(name='Simone', message='hello')
-message(message='hello', name='Simone')
+message("Simone", "hi there")
+message(name="Simone", message="hello")
+message(message="hello", name="Simone")
 
 
 # Returning a tuple

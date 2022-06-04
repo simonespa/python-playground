@@ -1,10 +1,13 @@
 from typing import Final
 
+
 class Window:
     BORDER_WIDTH: Final = 2.5
 
+
 class ListView(Window):
     BORDER_WIDTH = 3  # Error: can't override a final attribute
+
 
 window = Window()
 print(window.BORDER_WIDTH)

@@ -2,33 +2,44 @@
 
 
 class Person:
-    def eat(self): print('Person - Eat')
+    def eat(self):
+        print("Person - Eat")
 
-    def drink(self): print('Person - Drink')
+    def drink(self):
+        print("Person - Drink")
 
-    def sleep(self): print('Person - Sleep')
+    def sleep(self):
+        print("Person - Sleep")
 
 
 class Employee(Person):
-    def eat(self): print('Employee - Eat')
+    def eat(self):
+        print("Employee - Eat")
 
-    def drink(self): print('Employee - Drink')
+    def drink(self):
+        print("Employee - Drink")
 
-    def sleep(self): print('Employee - Sleep')
+    def sleep(self):
+        print("Employee - Sleep")
 
 
 class SalesPerson(Employee):
-    def eat(self): print('SalesPerson - Eat')
+    def eat(self):
+        print("SalesPerson - Eat")
 
-    def drink(self): print('SalesPerson - Drink')
+    def drink(self):
+        print("SalesPerson - Drink")
 
 
 class Dog:
-    def eat(self): print('Dog - Eat')
+    def eat(self):
+        print("Dog - Eat")
 
-    def drink(self): print('Dog - Drink')
+    def drink(self):
+        print("Dog - Drink")
 
-    def sleep(self): print('Dog - Sleep')
+    def sleep(self):
+        print("Dog - Sleep")
 
 
 def night_out(p):
@@ -45,11 +56,11 @@ d = Dog()
 
 # Now use the function night_out
 # with each type of object
-print('-' * 25)
+print("-" * 25)
 night_out(p)
-print('-' * 25)
+print("-" * 25)
 night_out(e)
-print('-' * 25)
+print("-" * 25)
 night_out(s)
-print('-' * 25)
+print("-" * 25)
 night_out(d)

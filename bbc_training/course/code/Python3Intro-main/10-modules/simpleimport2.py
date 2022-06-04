@@ -1,4 +1,4 @@
 from utils import Shape
 
-s = Shape('rectangle')
+s = Shape("rectangle")
 print(s)

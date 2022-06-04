@@ -22,11 +22,13 @@
 
 # Grades
 
-grades = {'John': [8, 2, 3, 6, 8],
- 'Annie': [5, 8, 7, 8, 5],
- 'Pete': [8, 8, 6, 7, 9],
- 'Lucy': [2, 4, 5, 6, 7],
- 'Bob': [6, 7, 5, 6, 7]}
+grades = {
+    "John": [8, 2, 3, 6, 8],
+    "Annie": [5, 8, 7, 8, 5],
+    "Pete": [8, 8, 6, 7, 9],
+    "Lucy": [2, 4, 5, 6, 7],
+    "Bob": [6, 7, 5, 6, 7],
+}
 
 # name = input('Give me a name: ')
 
@@ -42,8 +44,8 @@ grades = {'John': [8, 2, 3, 6, 8],
 keys = grades.keys()
 
 for person in grades:
-  ithGrades = grades[person]
-  sum = 0
-  for grade in ithGrades:
-    sum += grade
-  print(f'The average for {person} is {sum / len(ithGrades)}')
+    ithGrades = grades[person]
+    sum = 0
+    for grade in ithGrades:
+        sum += grade
+    print(f"The average for {person} is {sum / len(ithGrades)}")
