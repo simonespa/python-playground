@@ -12,14 +12,7 @@ This folder contains coding puzzles for general practice to keep myself current 
 
 ## stats
 
-I use this folder to practice data science with the most well-known libraries:
-* NumPy
-* SciPy
-* scikit-learn
-* pandas
-* TensorFlow
-* PyTorch
-* Matplotlib
+I'm using this folder to learn and practice libraries such as numpy, scipy, matplotlib, etc.
 
 ## Getting Started
 
