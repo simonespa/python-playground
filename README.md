@@ -76,7 +76,7 @@ python exercises/example.py
 
 ## Test and code formatting
 
-To test every `*_test.py` module within the `exercises` folder run `pytest` command.
+To test every `*_test.py` module, run `pytest` command.
 
 To format every file in the `exercises` folder run `black exercises` command.
 
