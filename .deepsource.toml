@@ -1,0 +1,16 @@
+version = 1
+
+test_patterns = ["exercises/**/*_test.py"]
+
+exclude_patterns = ["bbc_training/**", "stats/**"]
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[transformers]]
+name = "black"
+enabled = true
