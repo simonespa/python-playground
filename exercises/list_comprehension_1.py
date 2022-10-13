@@ -14,18 +14,26 @@ transports = [
     {"maker": "Boeing", "type": "airplane"},
 ]
 
+
 def list_of_wheels(option):
     result = []
 
     if option == "1":
         for transport in transports:
-            value, *rest = [type["wheels"] for type in types if type["id"] == transport["type"]]
+            value, *rest = [
+                type["wheels"] for type in types if type["id"] == transport["type"]
+            ]
             result.append(value)
 
         return result
 
     if option == "2":
-        return [type["wheels"] for transport in transports for type in types if type["id"] == transport["type"]]
+        return [
+            type["wheels"]
+            for transport in transports
+            for type in types
+            if type["id"] == transport["type"]
+        ]
 
 
 option = input('Enter option "1" or "2"]: ')
