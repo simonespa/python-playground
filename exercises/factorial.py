@@ -11,11 +11,3 @@ def factorial(n):
         factorial = factorial * x
 
     return factorial
-
-
-try:
-    number = int(input("Enter a positive integer number: "))
-
-    print(f"{number}! = {factorial(number)}")
-except:
-    print("Not a number")
