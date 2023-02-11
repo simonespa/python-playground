@@ -22,7 +22,6 @@ from roman_to_integer import roman_to_integer
         ("XV", 15),
         ("XX", 20),
         ("XXX", 30),
-        ("XXX", 30),
         ("XL", 40),
         ("L", 50),
         ("LX", 60),
