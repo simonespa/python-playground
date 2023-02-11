@@ -1,8 +1,6 @@
 version = 1
 
-test_patterns = ["exercises/**/*_test.py"]
-
-exclude_patterns = ["bbc_training/**", "stats/**"]
+test_patterns = ["src/**/*_test.py"]
 
 [[analyzers]]
 name = "python"

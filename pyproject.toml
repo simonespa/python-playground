@@ -4,5 +4,5 @@ target-version = ['py37']
 
 [tool.pytest.ini_options]
 testpaths = [
-    "exercises/**/*_test.py"
+    "src/**/*_test.py"
 ]
