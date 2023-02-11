@@ -85,12 +85,26 @@ pytest
 To format every file in the `exercises` folder
 
 ```
-black exercises
+black src
 ```
 
 ## Requirements file
 
 If you want to generate a new "requirements" file or add/remove dependencies and update the existing one
+
+```
+pip freeze > requirements.txt
+```
+
+## How to upgrade the dependencies
+
+Replace all `==` symbols in the `requirements.txt` file with `>=`, then run
+
+```
+pip install -r requirements.txt --upgrade
+```
+
+then run
 
 ```
 pip freeze > requirements.txt
