@@ -9,18 +9,18 @@ Playground repository for Python exercises.
 Create a virtual environment with `virtualenv`
 
 ```
-virtualenv .env
+virtualenv .python
 ```
 
 ### Activate the virtual environment
 
 ```
-source .env/bin/activate
+source .python/bin/activate
 ```
 or
 
 ```
-. env/bin/activate
+. python/bin/activate
 ```
 
 ### Verify the virtual environment
